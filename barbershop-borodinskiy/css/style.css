@@ -1,0 +1,825 @@
+body {
+    font-size: 14px;
+    line-height: 24px;
+    color: f7f4f1;
+    font-weight: 700; 
+    font-style: normal;
+    font-family: "PT Sans Narrow";
+    background-color: gray;
+    text-transform: uppercase;
+    background: black url("../img/background.jpg") no-repeat center top;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: normal;
+    color: 000000;
+    font-weight: normal; 
+    font-style: normal;
+    font-family: "PT Sans Narrow";      
+}
+
+h2 {
+    font-size: 30px;
+    line-height: normal;
+    color: 000000;
+    font-weight: 700; 
+    font-style: normal;
+    font-family: "PT Sans Narrow";       
+}
+
+html,
+body {
+    min-width: 1122px;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+}
+
+a {
+    text-decoration:none;
+    color: white;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-header {
+    margin-bottom: 60px;
+    background-color: black;    
+}
+
+.main-navigation {
+    float: left;
+    width: 780px;
+    min-height: 70px;
+    font-size: 16px;
+    line-height: 16px;
+    color: white;
+    background-color: black;
+}
+
+.main-navigation ul {
+   font-size: 0;
+}
+
+/* расширил блок падингами, тест на переполнение*/
+.main-navigation a {
+    padding: 26px 20px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: black;
+}
+
+.main-navigation a:hover {
+    background-color: #242424;
+}
+
+/* размеры не задавал, блок расширился от дочерней ссылки */
+.main-navigation li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.user-block {
+    float: right;
+    width: 140px;
+    min-height: 70px;
+    background-color: black;
+    font-size: 16px;
+    line-height: 16px;
+    color: white;
+}
+
+
+.user-block a {
+    display: inline-block;
+    position: relative;
+    padding: 28px 20px;
+    margin-left: 38px;
+    padding-left: 48px;
+    vertical-align: top;
+
+}
+
+.user-block a:hover {
+    background-color: #242424;
+}
+
+.user-block a::before {
+    content: "";
+    width: 18px;
+    height: 16px;
+    background-color: grey;
+    position: absolute;
+    top: 28px;
+    left: 16px;
+    background: url("../img/icon-login.png") no-repeat 0 0;
+    opacity: 0.3;
+}
+
+.user-block a:hover::before {
+    opacity: 1;
+}
+/* barbershop-shop */
+.inner-page {
+    background: #f8f5f2 url("../img/bg-inner.png");
+}
+
+.header-inner {
+   margin-bottom: 52px;
+   background-color: black;
+}
+
+.header-inner .container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+       
+}
+
+.header-inner .main-logo {
+    display: block;
+    width: 116px;
+    height: 72px;
+    float:left;
+    margin-left: 18px;
+    background: black url("../img/main-logo2.png") center no-repeat;
+    
+}
+
+.header-inner .main-navigation {
+    float:left;
+    width:620px;
+    margin-left: 17px;
+}
+
+.header-inner .user-block {
+    width:140px;
+    float:right;
+}
+
+.header-inner .user-block a {
+    margin-left: 38px;
+}
+
+.header-inner .active {
+    position: relative;
+}
+
+.header-inner .active::before {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 4px;
+    background-color: white;
+    top: 68px;
+    left: 19px;
+
+}
+/* barbershop-shop */
+
+.index-logo {
+    width: 368px;
+    min-height: 204px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 19px;
+}
+
+.features {
+    margin-bottom: 78px;
+}
+
+.features-item {
+    float: left;
+    width: 300px;
+    min-height: 175px;
+    margin-right: 20px;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.features-item::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 51px;
+    left: 139px;
+    transform: rotate(45deg);
+    
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.features-name {
+    font-size: 30px;
+    color: white;
+    display: block;
+    padding-bottom: 78px;
+    text-align: center;
+    width: 300px;
+}
+
+.index-content {
+    margin-bottom: 35px;
+    padding: 50px 80px;
+    padding-top: 14px;
+    background-color: white;
+    color: black;
+    background: url(../img/frontier.png) no-repeat center, white url(../img/bg-content.png);
+      
+}
+
+.news .index-content-title {
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.index-content .news {
+    float: left;
+    width: 380px;
+    min-height: 330px;
+}
+
+.index-content .news time {
+    font-weight: 500;
+}
+
+.index-content .news li {
+    margin-bottom: 25px;
+}
+
+.news .btn {
+    width: 140px;
+    height: 43px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    background-color: black;
+}
+
+.news .btn:hover {
+    background-color: #663d15;
+}
+
+.index-content-right {
+    float: right;
+    width: 311px;
+    min-height: 330px;
+}
+
+.index-content-left {
+    float: left;
+}
+
+.gallery .index-content-title {
+    padding-left: 13px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.gallery-block {
+    margin-left: 10px;
+}
+
+.gallery-block .gallery-content {
+    width: 286px;
+    height: 164px;
+    border: 7px solid white;
+    margin-bottom: 37px;
+}
+
+.gallery-block .btn {
+    width: 140px;
+    height: 43px;
+    border:0;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-right: 17px;
+    color: white;
+    background-color: black;
+    outline: none;
+}
+
+.gallery-block .btn:hover {
+    background-color: #663d15;
+}
+
+.gallery-block :last-child {
+    margin-right: 0;
+}
+
+.contacts .index-content-title {
+    margin-top: 32px;
+    margin-bottom: 23px;
+}
+
+.contacts p:nth-of-type(1) {
+    margin-bottom: 23px;
+}
+
+.contacts .btn {
+    width: 140px;
+    height: 43px;
+    margin-top: 47px;
+    margin-right: 20px;
+    margin-bottom: 13px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    background-color: black;
+}
+
+.contacts .btn:hover {
+    background-color: #663d15;
+}
+
+.appointment .index-content-title {
+    padding-left: 12px;
+    margin-top: 32px;
+    margin-bottom: 23px;
+}
+
+.appointment p {
+    padding-left: 12px;
+    margin-bottom: 28px;
+}
+
+.appointment input {
+    margin-right: 8px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    width: 121px;
+    height: 37px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    margin-left: 9px;
+    outline: none;
+}
+
+.appointment input:focus {
+    border: 2px solid #663d15;
+}
+
+.appointment input:nth-child(even) {
+    margin-right: 0;
+}
+
+.appointment input::-moz-placeholder { 
+    color: black;
+    opacity: 1;
+}
+.appointment input::-webkit-input-placeholder { 
+    color: black;
+    opacity: 1;
+}
+
+.appointment .btn {
+    display: block;
+    width: 300px;
+    height: 43px;
+    border: 0;
+    margin-top: 12px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.appointment .btn:hover {
+    background-color: #663d15;
+}
+
+/* barbershop-shop */
+.content-shop .catlog-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.content-shop .catalog-breadcrumbs {
+    margin-bottom: 50px;
+}
+
+.catalog-breadcrumbs li {
+    margin-right: 40px;
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.catalog-breadcrumbs .breadcrumbs-current {
+    color: #b0aeac;
+}
+
+.catalog-breadcrumbs ul :nth-child(-n+2)::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: black;
+    left: 65px;
+    top: 7px;
+    transform: rotate(45deg);
+}
+    
+
+.content-shop .filters {
+    width: 220px;
+    float: left;
+    color: black;
+}
+
+.filters .form-title {
+    font-size: 24px;
+    line-height: 24px ;
+    margin-bottom: 29px;
+}
+
+.filters span {
+    display: inline-block;
+    margin-left: 43px;
+}
+
+.filters input[type="checkbox"] {
+    display:none;    
+}
+
+.filters label:hover {
+    color: #663d15;
+}
+
+.filters .disabled {
+    color:#c4c4c4;
+}
+
+.filters .disabled:hover {
+    color:#c4c4c4;
+}
+
+.filters .form-title:nth-of-type(2) {
+    margin-top: 49px;
+}
+
+.filters input[type="checkbox"] + label {
+    display:block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 13px;
+    padding-left: 43px;
+}
+
+.filters input[type="checkbox"] + label::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    background: transparent url("../img/form-sprite.png") no-repeat -10px -47px;
+}
+
+.filters input[type="checkbox"] + .disabled::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    background: transparent url("../img/form-sprite.png") no-repeat -10px -154px;
+} 
+
+.filters input[type="checkbox"]:checked + label::before {
+    width: 20px;
+    height: 20px;
+    background: transparent url("../img/form-sprite.png") no-repeat;   
+    background-position: -10px -7px;
+}
+
+.filters input[type="radio"] {
+    display:none;    
+}
+
+.filters input[type="radio"] + label {
+    display:inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.filters input[type="radio"] + label::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background: transparent url("../img/form-sprite.png") no-repeat -10px -127px;
+}
+
+.filters input[type="radio"]:checked + label::before {
+    width: 20px;
+    height: 20px;
+    background: transparent url("../img/form-sprite.png") no-repeat;   
+    background-position: -10px -87px;
+}
+
+.filters .btn-show {
+    width: 112px;
+    height: 43px;
+    margin-top: 36px;
+    display: inline-block;
+    text-align: center;
+    border:0;
+    line-height: 43px;
+    color: white;
+    background-color: black;
+}
+
+.filters .btn-show:hover {
+    background-color: #663d15;
+}
+
+.content-shop .catalog-wrapper {
+    float: right;
+    width: 700px;
+    font-size: 0;
+}
+
+
+.catalog-wrapper .catalog-item {
+    display: inline-block;
+    width: 220px;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px lightgray;
+}
+
+.catalog-wrapper .catalog-item:hover {
+    box-shadow: 0 0 10px 1px gray;
+}
+
+.catalog-wrapper .catalog-item img {
+    margin-bottom: 12px;
+}
+
+.catalog-wrapper .catalog-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+.price-block {
+    width: 187px;
+    height: 43px;
+    background-color: green;
+    margin: 0 auto;
+    font-size: 0;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.catalog-item .title,.category {
+    margin-left: 16px;
+    color: black;
+}
+
+.price-block .price {
+    display: inline-block;
+    width: 109px;
+    height: 43px;
+    font-size: 14px;
+    line-height: 43px;
+    color: black;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+.price-block .buy-btn {
+    display: inline-block;
+    width: 78px;
+    height: 43px;
+    font-size: 14px;
+    line-height: 43px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+.price-block .buy-btn:hover {
+    background-color: #663d15;
+}
+
+.content-shop .paginator {
+    clear: both;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.paginator li {
+    display: inline-block;
+}
+
+.paginator a {
+    display: block;
+    width: 43px;
+    height: 43px;
+    margin-right: 4px;
+    line-height: 43px;
+    text-align: center;
+    background-color: black;
+}
+
+.paginator a:hover {
+    background-color: #663d15;
+}
+.paginator .current-page:hover {
+    background-color: white;
+} 
+
+.paginator .current-page {
+    background-color: white;
+    color: black;
+}
+
+.group-one {
+    background-color: aqua;
+    width: 700px;
+    
+}
+
+.group-two {
+    background-color: cornflowerblue;
+    width: 700px;
+    margin-bottom: 45px;
+}
+/* barbershop-shop */
+
+.main-footer {
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: #242424 url("../img/bg-footer.png");    
+}
+
+.inner-page .main-footer {
+    margin-top: 49px;
+    padding-top: 57px;
+}
+
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+    min-height: 90px;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+
+.footer-contacts a {
+    text-decoration: underline;
+}
+
+.footer-social {
+    float: left;
+    width: 180px;
+    min-height: 90px;
+    margin-left: 19px;
+    color: white;
+}
+
+.footer-social p {
+    margin-left: 18px;
+    margin-bottom: 14px;
+}
+
+.footer-social .social-btn {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin-right: 4px;
+    
+}
+
+.footer-social .social-btn-vk {
+    background: black url("../img/sprite.png") no-repeat -3px -162px ;
+}
+
+.social-btn-vk:hover {
+    background-color: white;
+    background-position: -3px -198px;
+}
+
+.footer-social .social-btn-fb {
+    background: black url("../img/sprite.png") no-repeat 5px 0px ;
+}
+
+.social-btn-fb:hover {
+    background-color: white;
+    background-position: 5px -41px;
+}
+
+.footer-social .social-btn-inst {
+    background: black url("../img/sprite.png") no-repeat 3px -83px ;
+}
+
+.social-btn-inst:hover {
+    background-color: white;
+    background-position: 3px -123px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  min-height: 90px;
+}
+
+.footer-copyright p {
+    margin-left: 72px;
+    margin-bottom: 14px;
+    color: white;
+}
+
+.footer-copyright .btn {
+    display: inline-block;
+    width: 140px;   
+    height: 43px;
+    margin-left: 39px;
+    text-align: center;
+    line-height: 43px ;
+    background-color: black;
+}
+
+.footer-copyright .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/*
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-checkbox-active {
+    width: 20px;
+    height: 20px;
+    background-position: -10px -10px;
+}
+
+.sprite-checkbox-disabled {
+    width: 20px;
+    height: 20px;
+    background-position: -10px -50px;
+}
+
+.sprite-radio-active {
+    width: 20px;
+    height: 20px;
+    background-position: -10px -90px;
+}
+
+.sprite-radio-disabled {
+    width: 20px;
+    height: 20px;
+    background-position: -10px -130px;
+}
+*/
