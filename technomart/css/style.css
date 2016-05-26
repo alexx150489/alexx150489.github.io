@@ -89,7 +89,7 @@ h3 {
 }
 
 .main-header {
-     background-color: #f1f5f7;
+    background-color: #f1f5f7;
     margin-bottom: 60px;
 }
 
@@ -908,7 +908,6 @@ h3 {
 .popular-vendors .vendor-logo {
     width: 220px;
     height: 145px;
-    display: block;
     margin-right: 20px;
     margin-bottom: 20px;
     border:1px solid #e5e5e5;
@@ -916,27 +915,29 @@ h3 {
     vertical-align: top;
     cursor: pointer;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+.popular-vendors .vendor-logo img {
+  display: block;
+  width: 220px;
+  height: 145px;
 }
 
 .popular-vendors .vendor-logo:nth-child(4n) {
     margin-right: 0;
 }
 
-.popular-vendors .bosch {
-    background: url(../img/bosch.png) center no-repeat;    
-}
-
 .popular-vendors .bosch:hover {
-    box-shadow: 0px 4px 22px 7px lightgray; 
+    box-shadow: 0px 4px 21px 7px lightgray; 
 }
 
 .popular-vendors .bosch:active {
-    background: url(../img/bosch-tr.png) center no-repeat;
     box-shadow: 0px 4px 22px 3px lightgray;
 }
 
-.popular-vendors .makita {
-    background: url(../img/makita.png) center no-repeat;    
+.popular-vendors .bosch img:active  {
+   opacity: .3;
 }
 
 .popular-vendors .makita:hover {
@@ -944,12 +945,11 @@ h3 {
 }
 
 .popular-vendors .makita:active {
-    background: url(../img/makita-tr.png) center no-repeat;
     box-shadow: 0px 4px 22px 3px lightgray;
 }
 
-.popular-vendors .dewalt {
-    background: url(../img/DeWALT.png) center no-repeat;    
+.popular-vendors .makita img:active  {
+   opacity: .3;
 }
 
 .popular-vendors .dewalt:hover {
@@ -957,12 +957,11 @@ h3 {
 }
 
 .popular-vendors .dewalt:active {
-    background: url(../img/dewalt-tr.png) center no-repeat;
     box-shadow: 0px 4px 22px 3px lightgray;
 }
 
-.popular-vendors .interskol {
-    background: url(../img/interskol.png) center no-repeat;    
+.popular-vendors .dewalt img:active  {
+   opacity: .3;
 }
 
 .popular-vendors .interskol:hover {
@@ -970,12 +969,11 @@ h3 {
 }
 
 .popular-vendors .interskol:active {
-    background: url(../img/interskol-tr.png) center no-repeat;
     box-shadow: 0px 4px 22px 3px lightgray;
 }
 
-.popular-vendors .hitachi {
-    background: url(../img/hitachi.png) center no-repeat;    
+.popular-vendors .interskol img:active  {
+   opacity: .3;
 }
 
 .popular-vendors .hitachi:hover {
@@ -983,12 +981,11 @@ h3 {
 }
 
 .popular-vendors .hitachi:active {
-    background: url(../img/hitachi-tr.png) center no-repeat;
     box-shadow: 0px 4px 22px 3px lightgray;
 }
 
-.popular-vendors .lg {
-    background: url(../img/lg.png) center no-repeat;    
+.popular-vendors .hitachi img:active  {
+   opacity: .3;
 }
 
 .popular-vendors .lg:hover {
@@ -996,12 +993,11 @@ h3 {
 }
 
 .popular-vendors .lg:active {
-    background: url(../img/lg-tr.png) center no-repeat;
     box-shadow: 0px 4px 22px 3px lightgray;
 }
 
-.popular-vendors .aeg {
-    background: url(../img/aeg.png) center no-repeat;    
+.popular-vendors .lg img:active  {
+   opacity: .3;
 }
 
 .popular-vendors .aeg:hover {
@@ -1009,12 +1005,11 @@ h3 {
 }
 
 .popular-vendors .aeg:active {
-    background: url(../img/aeg-tr.png) center no-repeat;
     box-shadow: 0px 4px 22px 3px lightgray;
 }
 
-.popular-vendors .metabo {
-    background: url(../img/metabo.png) center no-repeat;    
+.popular-vendors .aeg img:active  {
+   opacity: .3;
 }
 
 .popular-vendors .metabo:hover {
@@ -1022,8 +1017,11 @@ h3 {
 }
 
 .popular-vendors .metabo:active {
-    background: url(../img/metabo-tr.png) center no-repeat;
     box-shadow: 0px 4px 22px 3px lightgray;
+}
+
+.popular-vendors .metabo img:active  {
+   opacity: .3;
 }
 
 .main-content .wrapper {
