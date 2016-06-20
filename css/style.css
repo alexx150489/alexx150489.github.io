@@ -13,10 +13,9 @@ h1 {
 }
 
 img {
+    display: block;
     border:none;
 }
-
-
 
 .container {
     padding: 0 10px;
@@ -29,7 +28,6 @@ img {
     background-color: rgba(192, 160, 122, .5);
     padding-top: 1px;
     min-height: 584px;
-
 }
 
 .id {
@@ -80,7 +78,6 @@ img {
 }
 
 .profile li:last-child {
-    
     margin:0;
 }
 
@@ -97,4 +94,3 @@ img {
 .profile a:hover {
     color: #FF8940;
 }
-

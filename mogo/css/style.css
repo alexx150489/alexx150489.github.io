@@ -22,6 +22,11 @@ blockquote {
     margin: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .clearfix {
     content:"";
     display: table;
@@ -1051,7 +1056,7 @@ blockquote {
 }
 
 .samples {
-    width: 1920px ;
+    width: 1200px ;
     margin: 0 auto 92px auto;
     font-size: 0;
 }
@@ -1069,8 +1074,8 @@ blockquote {
 .sample .title-block {
     position: relative;
     padding-top: 1px;
-    width: 480px;
-    height: 390px;
+    width: 300px;
+    height: 243px;
     display: block;
     background: #fff url(../img/sample4-active.jpg) 0 0 no-repeat;
 }
@@ -1078,22 +1083,23 @@ blockquote {
 .sample .title-block::after {
     position: absolute;
     content: "";
-    top: 160px;
-    left: 218px;
+    top: 78px;
+    left: 142px;
     background: url('../img/sprite.png') no-repeat -10px -2907px;
 	width: 30px;
 	height: 30px;
 }
 
 .sample .title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat',sans-serif;
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     margin-top: 43%;
     margin-bottom: 11px;
+    margin-left: 13px;
 }
 
 .sample .text {
