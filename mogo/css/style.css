@@ -1056,7 +1056,7 @@ img {
 }
 
 .samples {
-    width: 1200px ;
+    width: 1600px ;
     margin: 0 auto 92px auto;
     font-size: 0;
 }
@@ -1074,8 +1074,8 @@ img {
 .sample .title-block {
     position: relative;
     padding-top: 1px;
-    width: 300px;
-    height: 243px;
+    width: 400px;
+    height: 324px;
     display: block;
     background: #fff url(../img/sample4-active.jpg) 0 0 no-repeat;
 }
@@ -1083,8 +1083,8 @@ img {
 .sample .title-block::after {
     position: absolute;
     content: "";
-    top: 78px;
-    left: 142px;
+    top: 122px;
+    left: 193px;
     background: url('../img/sprite.png') no-repeat -10px -2907px;
 	width: 30px;
 	height: 30px;
