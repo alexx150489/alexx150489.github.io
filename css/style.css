@@ -19,12 +19,39 @@ img {
     
 }
 
+.section-title {
+    position: relative;
+    margin-left: 60px;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -5px;
+    left: -56px;
+    background: url(../img/Gear-icon-black.svg) 0 0 no-repeat;
+}
+
 .main-header__id {
     width: 940px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: teal;
+}
+
+.main-header__logo {
+    margin-bottom: 38px;
+}
+
+.main-header__creator {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    background-color: teal;
+    justify-content: center;
 }
 
 .main-header__name {
@@ -62,17 +89,17 @@ img {
 }
 
 .portfolio__title {
-   font-family: 'PT Sans', sans-serif;
+   font-family: 'Scada', sans-serif;
     font-size: 35px;
     line-height: 35px;
-    font-weight: 500;
+    font-weight: 700;
     color: black;
     text-align: left;
     border-bottom: 3px solid black;
     width: 280px;
     padding-bottom: 9px;
     margin-bottom: 30px;
-    margin-left: 7px;
+    
 }
 
 .portfolio__portfolio-items {
@@ -132,17 +159,16 @@ img {
 }
 
 .skills__title {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Scada', sans-serif;
     font-size: 35px;
     line-height: 35px;
-    font-weight: 500;
+    font-weight: 700;
     color: black;
     text-align: left;
     border-bottom: 3px solid black;
     width: 280px;
     padding-bottom: 9px;
-  
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .skills__wrapper {
@@ -151,12 +177,16 @@ img {
 }
 
 .skills__list {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Scada', sans-serif;
     font-size: 23px;
     line-height: 28px;
     color: black;
     margin: 0;
     list-style-type: none;
+}
+
+.skills__item {
+    margin-bottom: 20px;
 }
 
 /* Сертификаты */
@@ -174,10 +204,10 @@ img {
 }
 
 .certificates__title {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Scada', sans-serif;
   font-size: 35px;
   line-height: 35px;
-  font-weight: 500;
+  font-weight: 700;
   color: black;
   text-align: left;
   border-bottom: 3px solid black;
