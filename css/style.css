@@ -20,15 +20,12 @@ img {
     
 }
 
-
-
 .main-header__id {
     width: 940px;
     display: flex;
     flex-direction: column;
-    
     justify-content: flex-end;
-    background-color: rgba(193, 150, 122, .1);
+    background-color: rgba(180, 180, 180, .1);
 }
 
 .main-header__name {
@@ -51,7 +48,7 @@ img {
 
 .main-content {
     width: 940px;
-    background-color: rgba(193, 150, 122, .1);
+    background-color: rgba(180, 180, 180, .1);
     padding-top: 1px;
     min-height: 584px;
     
