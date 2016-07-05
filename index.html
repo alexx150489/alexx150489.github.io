@@ -3,30 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>My Profile</title>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Scada:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-    <header>
-        <div class="id container">
-            <div class="name">Alexandr Nikolskiy</div>
-            <div class="status">web-developer</div>
+    <header class="main-header">
+        <div class="main-header__id container">
+            <div class="main-header__name">Александр Никольский</div>
+            <div class="main-header__status">web-разработчик</div>
         </div>
-   </header>
-    <div class="profile container">
-        <div class="portfolio-title">Portfolio</div>
-            <ul>
-                <li><a href="technomart/index.html">technomart</a></li>
-                <li><a href="barbershop-borodinskiy/index.html">barbershop</a></li>
-                <li><a href="Nerds/index.html">nerds</a></li>
-                <li><a href="mogo/index.html">MoGo</a></li>
-            </ul>
+    </header>
+    <div class="main-content container">
+        <section class="main-content__portfolio">
+          <div class="portfolio__title">Портфолио</div>
+          <div class="portfolio__portfolio-items">
+            <a href="technomart/index.html" class="portfolio__item portfolio__item--technomart">
+              <img src="img/technomart-bg-alt.jpg" width="300" height="200" alt="technomart">
+            </a>
+            <a href="sedona-adaptive/index.html" class="portfolio__item portfolio__item--sedona">
+              <img src="img/sedona-bg-alt.jpg" width="300" height="200" alt="sedona">
+            </a>
+            <a href="mogo/index.html" class="portfolio__item portfolio__item--mogo">
+              <img src="img/mogo-bg-alt.jpg" width="300" height="200" alt="mogo">
+            </a>
+            <a href="barbershop-borodinskiy/index.html" class="portfolio__item portfolio__item--borodinskiy">
+              <img src="img/bardershop-bg-alt.jpg" width="300" height="200" alt="barbershop">
+            </a>
+            <a href="Nerds/index.html" class="portfolio__item portfolio__item--nerds">
+              <img src="img/nerds-bg-alt.jpg" width="300" height="200" alt="nerds">
+            </a>
+            <a class="portfolio__portfolio-page-link" href="#">
+            <svg class="portfolio__more-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 529.578 529.578" style="enable-background:new 0 0 529.578 529.578;" xml:space="preserve" width="512px" height="512px" fill="#FFFFFF">
+              <g>
+                  <g>
+                      <path d="M266.032,529.578c146.691,0,263.546-119.342,263.546-263.546S410.237,0,266.032,0S0,119.342,0,266.032    S119.342,529.578,266.032,529.578z M266.032,24.863c131.773,0,238.683,106.91,238.683,238.683s-106.91,238.683-238.683,238.683    S27.349,395.319,27.349,263.546S134.259,24.863,266.032,24.863z"/>
+                      <path d="M320.73,263.546l-111.883,126.8c-4.973,4.973-4.973,12.431,0,17.404c4.973,0,7.459,2.486,9.945,2.486    c2.486,0,7.459-2.486,9.945-4.973L348.08,271.005c4.973-4.973,4.973-12.431,0-17.404L228.738,121.828    c-4.973-4.973-12.431-4.973-17.404,0c-4.973,4.973-4.973,12.431,0,17.404L320.73,263.546z"/>
+                  </g>
+              </g>
+            </svg>
+            </a>
+          </div>
+        </section>
+       <section class="main-content__skills">
+         <div class="skills__title">Навыки</div>
+         <ul class="skills__list">
+           <li>HTML5 / CSS3</li>
+           <li>Адптивная верстка</li>
+           <li>Sass</li>
+           <li>gulp</li>
+           <li>git</li>
+         </ul>
+       </section>
+        
+
+       <section class="main-content__certificates">   
+        <div class="certificates__title">Сертификаты</div>
+        <div class="certificates__certificates-wrapper">
+            <div class="certificates__certificate certificates__certificate--htmlbasic">
+               <a href="https://drive.google.com/file/d/0B8h-3Q_xhp7xeThkTmNCYl9oSkU/view?usp=sharing">
+                <img src="img/htmlacademy-basic.jpg" alt="Сертификат" width="170" height="241">
+              </a>
+            </div>
+            <div class="certificates__certificate certificates__certificate--htmladvanced">
+              <a href="https://drive.google.com/file/d/0B8h-3Q_xhp7xMEVOZUVWRUFyOHM/view?usp=sharing">
+                <img src="img/htmlacademy-adv.jpg" alt="Сертификат2" width="170" height="241">
+              </a>
+            </div>
+        </div>
+      </section>
+       <section class="main-content__contacts">
+        <div class="contacts__title">Контакты</div>
+       </section>
+
+
+
     </div>
-  
-    
-    
+
+
+
 </body>
 </html>

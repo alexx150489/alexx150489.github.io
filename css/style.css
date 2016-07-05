@@ -1,15 +1,12 @@
 body {
-    background: url(../img/leonardo.jpg) top center no-repeat;
-    margin: 0;
-    padding: 0;
+  background: #F0DEC6 url(../img/leonardo.jpg) top center no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-    color: white;
-    font-family: "PT Sans", sans-serif;
-    text-align: center;
-    font-size: 30px;
-    text-transform: uppercase;
+h1,h2,h3 {
+    margin: 0;
 }
 
 img {
@@ -23,37 +20,50 @@ img {
     
 }
 
-.profile {
-    width: 880px;
-    background-color: rgba(192, 160, 122, .5);
-    padding-top: 1px;
-    min-height: 584px;
-}
 
-.id {
-    width: 880px;
+
+.main-header__id {
+    width: 940px;
+    display: flex;
+    flex-direction: column;
     margin-top: 34px;
+    justify-content: flex-end;
     background-color: rgba(192, 160, 122, .5);
 }
 
-.name {
-    font-family: 'Arvo', serif;
-    font-size: 24px;
+.main-header__name {
+    font-family: 'Scada', sans-serif;
+    font-size: 30px;
     line-height: normal;
     font-weight: 700;
     color: #ffffff;
     text-align: right;
 }
 
-.status {
-    font-family: 'Arvo', serif;
+.main-header__status {
+    font-family: 'Scada', sans-serif;
+    font-size: 19px;
+    line-height: 19px;
     font-weight: 700;
     color: #ffffff;
     text-align: right;
 }
 
-.portfolio-title {
-    font-family: Montserrat;
+.main-content {
+    width: 940px;
+    background-color: rgba(192, 160, 122, .5);
+    padding-top: 1px;
+    min-height: 584px;
+}
+
+
+/* Портфолио */
+.main-content__portfolio {
+    margin-bottom: 35px;
+}
+
+.portfolio__title {
+    font-family: 'PT Sans', sans-serif;
     font-size: 35px;
     line-height: 35px;
     font-weight: 500;
@@ -63,34 +73,145 @@ img {
     width: 280px;
     text-transform: uppercase;
     padding-bottom: 9px;
+    margin-bottom: 30px;
+    margin-left: 7px;
 }
 
-.profile ul {
-    margin-top: 77px;
-    font-size: 0;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+
+
+
+.portfolio__portfolio-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  
 }
 
-.profile li {
+.portfolio__item {
+    display: block;
+    width: 300px;
+    min-height: 200px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+    border: 3px solid white;
+    background: url("../img/technomart-bg-alt.jpg") 0 0 no-repeat; 
+    box-sizing: border-box;
+    transition-duration: 0.2s;
+    overflow: hidden;
+}
+
+
+.portfolio__item:hover {
+      border-color: rgb(255, 137, 64);
+}
+
+.portfolio__item:active {
+      border-color: rgb(224, 121, 56);
+}
+
+.portfolio__more-icon {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 279px;
+  right: 41px;
+  transition-duration: 0.2s;
+}
+
+.portfolio__more-icon:hover {
+  fill: rgb(255, 137, 64);
+}
+
+.portfolio__more-icon:active {
+  fill: rgb(224, 121, 56);
+}
+
+.portfolio__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* Навыки */
+.main-content__skills {
     margin-bottom: 35px;
 }
 
-.profile li:last-child {
-    margin:0;
+.skills__title {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: left;
+  border-bottom: 3px solid white;
+  width: 280px;
+  text-transform: uppercase;
+  padding-bottom: 9px;
+  margin-bottom: 30px;
 }
 
-.profile a {
-    font-family: 'Arvo', serif;
-    font-size: 18px;
+.skills__list {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 23px;
+    line-height: 28px;
     color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-decoration: none;
-    transition-duration: 0.5s;
+    margin: 0;
 }
 
-.profile a:hover {
-    color: #FF8940;
+/* Сертификаты */
+.main-content__certificates {
+    margin-bottom: 30px;
+}
+
+.certificates__certificates-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.certificates__title {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: left;
+  border-bottom: 3px solid white;
+  width: 280px;
+  text-transform: uppercase;
+  padding-bottom: 9px;
+  margin-bottom: 30px;
+}
+
+.certificates__certificate {
+  margin: 0 auto;
+  width: 170px;
+  height: 241px;
+  background-color: red;
+  border: 3px solid white;
+  transition-duration: 0.2s;
+}
+
+.certificates__certificate--htmlbasic:hover {
+    border-color: rgb(255, 137, 64);
+}
+
+.certificates__certificate--htmladvanced:hover {
+    border-color: rgb(69, 76, 142);
+}
+
+/* Контакты */
+.contacts__title {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: left;
+  border-bottom: 3px solid white;
+  width: 280px;
+  text-transform: uppercase;
+  padding-bottom: 9px;
 }
