@@ -36,13 +36,12 @@ img {
 
 .main-header__id {
     width: 940px;
-    min-height: 206px;
+    min-height: 160px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
     background-color: teal;
-   
 }
 
 
