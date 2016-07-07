@@ -123,7 +123,7 @@ img {
 }
 
 .portfolio__title {
-   font-family: 'Scada', sans-serif;
+   font-family: 'Roboto', sans-serif;
     font-size: 35px;
     line-height: 35px;
     font-weight: 700;
@@ -193,7 +193,7 @@ img {
 }
 
 .skills__title {
-    font-family: 'Scada', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 35px;
     line-height: 35px;
     font-weight: 700;
@@ -211,13 +211,14 @@ img {
 }
 
 .skills__list {
-    font-family: 'Scada', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 23px;
     line-height: 28px;
+    font-weight: 300;
     color: black;
     margin: 0;
     list-style-type: none;
-    padding-left: 63px;
+    padding-left: 106px;
 }
 
 .skills__item {
@@ -309,7 +310,7 @@ img {
 }
 
 .certificates__title {
-  font-family: 'Scada', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 35px;
   line-height: 35px;
   font-weight: 700;
@@ -349,7 +350,7 @@ img {
 }
 
 .contacts__title {
-  font-family: 'Scada', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 35px;
   line-height: 35px;
   font-weight: 700;
@@ -366,12 +367,14 @@ img {
   padding-left: 62px;
   padding-bottom: 1px;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding-left: 119px;
 }
 
 .contacts__vk {
   position: relative;
   text-decoration: none;
-  font-family: 'Scada', sans-serif;
   font-size: 23px;
   line-height: 28px;
   color: black;
@@ -394,7 +397,6 @@ img {
 .contacts__email {
   position: relative;
   text-decoration: none;
-  font-family: 'Scada', sans-serif;
   font-size: 23px;
   line-height: 28px;
   color: black;
@@ -417,7 +419,6 @@ img {
 .contacts__github {
   position: relative;
   text-decoration: none;
-  font-family: 'Scada', sans-serif;
   font-size: 23px;
   line-height: 28px;
   color: black;
@@ -437,7 +438,6 @@ img {
 .contacts__skype {
   position: relative;
   text-decoration: none;
-  font-family: 'Scada', sans-serif;
   font-size: 23px;
   line-height: 28px;
   color: black;
