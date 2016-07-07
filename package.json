@@ -1,0 +1,28 @@
+{
+  "name": "alexx150489.github.io",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexx150489/nikolskiyfx.github.io.git"
+  },
+  "keywords": [
+    "personal-page"
+  ],
+  "author": "nikolskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexx150489/nikolskiyfx.github.io/issues"
+  },
+  "homepage": "https://github.com/alexx150489/nikolskiyfx.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0"
+  }
+}
