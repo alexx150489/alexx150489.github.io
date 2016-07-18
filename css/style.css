@@ -5,7 +5,7 @@ body {
 }
 
 h1,h2,h3 {
-    margin: 0;
+  margin: 0;
 }
 
 img {
@@ -14,66 +14,63 @@ img {
 }
 
 .container {
-    padding: 0 10px;
-    margin: 0 auto;
-    
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .section-title {
-    position: relative;
-    margin-left: 60px;
+  position: relative;
+  margin-left: 60px;
 }
 
 .section-title::before {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -9px;
-    left: -56px;
-    background: url(../img/Gear-icon-black.svg) 0 0 no-repeat;
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -9px;
+  left: -56px;
+  background: url(../img/Gear-icon-black.svg) 0 0 no-repeat;
 }
 
 .main-header__id {
-    width: 940px;
-    min-height: 160px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-color: teal;
+  width: 940px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: teal;
 }
 
-
-
 .main-header__logo {
-    margin-bottom: 62px;
+  margin-bottom: 62px;
 }
 
 .main-header__creator {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-header__name {
-    font-family: 'Scada', sans-serif;
-    font-size: 30px;
-    line-height: normal;
-    font-weight: 700;
-    color: #ffffff;
-    text-align: right;
+  font-family: 'Scada', sans-serif;
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: right;
 }
 
 .main-header__status {
-    font-family: 'Scada', sans-serif;
-    font-size: 19px;
-    line-height: 19px;
-    padding-bottom: 7px;
-    font-weight: 700;
-    color: #ffffff;
-    text-align: right;
-    margin-bottom: 10px;
+  font-family: 'Scada', sans-serif;
+  font-size: 19px;
+  line-height: 19px;
+  padding-bottom: 7px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: right;
+  margin-bottom: 10px;
 }
 
 .main-header__contacts {
@@ -105,33 +102,31 @@ img {
 }
 
 .main-header__github-icon:hover {
-   fill: rgb(255, 137, 64);
+  fill: rgb(255, 137, 64);
 }
 
 .main-content {
-    width: 940px;
-    background-color: white;
-    padding-top: 1px;
+  width: 940px;
+  background-color: white;
+  padding-top: 1px;
 }
-
 
 /* Портфолио */
 .main-content__portfolio {
-    margin-bottom: 35px;
-    margin-top: 70px;
+  margin-bottom: 35px;
+  margin-top: 70px;
 }
-
-.portfolio__title {
-   font-family: 'Roboto', sans-serif;
-    font-size: 33px;
-    line-height: 33px;
-    font-weight: 700;
-    color: black;
-    text-align: left;
-    width: 280px;
-    padding-bottom: 9px;
-    margin-bottom: 30px;
     
+.portfolio__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 33px;
+  line-height: 33px;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  width: 280px;
+  padding-bottom: 9px;
+  margin-bottom: 30px;
 }
 
 .portfolio__portfolio-items {
@@ -143,112 +138,109 @@ img {
 }
 
 .portfolio__item {
-    position: relative;
-    display: block;
-    width: 300px;
-    min-height: 200px;
-    margin-right: 13px;
-    margin-bottom: 13px;
-    border: 3px solid lightgray;
-    box-sizing: border-box;
-    transition-duration: 0.2s;
-    overflow: hidden;
+  position: relative;
+  display: block;
+  width: 300px;
+  min-height: 200px;
+  margin-right: 13px;
+  margin-bottom: 13px;
+  border: 3px solid lightgray;
+  box-sizing: border-box;
+  transition-duration: 0.2s;
+  overflow: hidden;
 }
 
 .portfolio__item-technomart:hover::after {
-    content: 'Fixed';
-    position: absolute;
-    top: 152px;
-    left: 7px;
-    width: 127px;
-    height: 41px;
-    background-color: teal;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 41px;
-    
+  content: 'Fixed';
+  position: absolute;
+  top: 152px;
+  left: 7px;
+  width: 127px;
+  height: 41px;
+  background-color: teal;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 41px;
 }
 
 .portfolio__item-sedona:hover::after {
-    content: 'Adaptive';
-    position: absolute;
-    top: 152px;
-    left: 7px;
-    width: 127px;
-    height: 41px;
-    background-color: teal;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 41px;
+  content: 'Adaptive';
+  position: absolute;
+  top: 152px;
+  left: 7px;
+  width: 127px;
+  height: 41px;
+  background-color: teal;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 41px;
 }
 
 .portfolio__item-mogo:hover::after {
-    content: 'Fixed';
-    position: absolute;
-    top: 152px;
-    left: 7px;
-    width: 127px;
-    height: 41px;
-    background-color: teal;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 41px;
+  content: 'Fixed';
+  position: absolute;
+  top: 152px;
+  left: 7px;
+  width: 127px;
+  height: 41px;
+  background-color: teal;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 41px;
 }
 
 .portfolio__item-borodinskiy:hover::after {
-    content: 'Fixed';
-    position: absolute;
-    top: 152px;
-    left: 7px;
-    width: 127px;
-    height: 41px;
-    background-color: teal;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 41px;
-    
+  content: 'Fixed';
+  position: absolute;
+  top: 152px;
+  left: 7px;
+  width: 127px;
+  height: 41px;
+  background-color: teal;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 41px;
 }
 
 .portfolio__item-nerds:hover::after {
-    content: 'Fixed';
-    position: absolute;
-    top: 152px;
-    left: 7px;
-    width: 127px;
-    height: 41px;
-    background-color: teal;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 41px;
-    
+  content: 'Fixed';
+  position: absolute;
+  top: 152px;
+  left: 7px;
+  width: 127px;
+  height: 41px;
+  background-color: teal;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 41px;
 }
 
 .portfolio__item:hover {
-      border-color: rgb(255, 137, 64);
+  border-color: rgb(255, 137, 64);
 }
 
 .portfolio__item:active {
-      border-color: rgb(224, 121, 56);
+  border-color: rgb(224, 121, 56);
 }
 
 .portfolio__more-icon {
@@ -276,91 +268,91 @@ img {
 /* Навыки */
 
 .skills__title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 33px;
-    line-height: 33px;
-    font-weight: 700;
-    color: black;
-    text-align: left;
-    width: 280px;
-    padding-bottom: 9px;
-    margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 33px;
+  line-height: 33px;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  width: 280px;
+  padding-bottom: 9px;
+  margin-bottom: 30px;
 }
 
 .skills__wrapper {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .skills__list {
-    font-family: 'Roboto', sans-serif;
-    font-size: 23px;
-    line-height: 28px;
-    font-weight: 300;
-    color: black;
-    margin: 0;
-    list-style-type: none;
-    padding-left: 118px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 300;
+  color: black;
+  margin: 0;
+  list-style-type: none;
+  padding-left: 118px;
 }
 
 .skills__item {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .skills__html {
-    position: relative;
+  position: relative;
 }
 
 .skills__html::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: 0px;
-    left: -45px;
-    background: url(../img/sprite.png) -35px -45px no-repeat;
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0px;
+  left: -45px;
+  background: url(../img/sprite.png) -35px -45px no-repeat;
 }
 
 .skills__sass {
-    position: relative;
+  position: relative;
 }
 
 .skills__sass::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 19px;
-    top: 5px;
-    left: -45px;
-    background: url(../img/sprite.png) -80px -40px no-repeat;
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 19px;
+  top: 5px;
+  left: -45px;
+  background: url(../img/sprite.png) -80px -40px no-repeat;
 }
 
 .skills__gulp {
-    position: relative;
+  position: relative;
 }
 
 .skills__gulp::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 39px;
-    top: -8px;
-    left: -45px;
-    background: url(../img/sprite.png) -5px -45px no-repeat;
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 39px;
+  top: -8px;
+  left: -45px;
+  background: url(../img/sprite.png) -5px -45px no-repeat;
 }
 
 .skills__git {
-    position: relative;
+  position: relative;
 }
 
 .skills__git:after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 1px;
-    left: -50px;
-    background: url(../img/sprite.png) -40px -5px no-repeat;
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 1px;
+  left: -50px;
+  background: url(../img/sprite.png) -40px -5px no-repeat;
 }
 
 .skills__photoshop {
@@ -369,18 +361,17 @@ img {
 
 .skills__photoshop:after {
   content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: 1px;
-    left: -50px;
-    background: url(../img/sprite.png) -5px -5px no-repeat;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 1px;
+  left: -50px;
+  background: url(../img/sprite.png) -5px -5px no-repeat;
 }
 
 /* Сертификаты */
 .main-content__certificates {
-    
-    padding-bottom: 1px;
+  padding-bottom: 1px;
 }
 
 .certificates__certificates-wrapper {
@@ -388,7 +379,7 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .certificates__title {
@@ -413,11 +404,11 @@ img {
 }
 
 .certificates__htmlbasic:hover {
-    border-color: rgb(255, 137, 64);
+  border-color: rgb(255, 137, 64);
 }
 
 .certificates__htmladvanced:hover {
-    border-color: rgb(69, 76, 142);
+  border-color: rgb(69, 76, 142);
 }
 
 /* Контакты */
@@ -432,7 +423,6 @@ img {
   padding-bottom: 1px;
   margin-top: 30px;
   margin-bottom: 25px;
-    
 }
 
 .contacts__title {
@@ -465,10 +455,6 @@ img {
   color: black;
 }
 
-.contacts__vk:hover {
-  
-}
-
 .contacts__vk::after {
   position: absolute;
   content: '';
@@ -497,10 +483,6 @@ img {
   background: url(../img/email.svg) 0 0 no-repeat;
 }
 
-.contacts__email:hover {
-  
-}
-
 .contacts__github {
   position: relative;
   text-decoration: none;
@@ -518,7 +500,6 @@ img {
   left: -56px;
   background: url(../img/github.svg) 0 0 no-repeat;
 }
-
 
 .contacts__skype {
   position: relative;
