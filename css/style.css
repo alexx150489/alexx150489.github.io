@@ -143,16 +143,104 @@ img {
 }
 
 .portfolio__item {
+    position: relative;
     display: block;
     width: 300px;
     min-height: 200px;
     margin-right: 13px;
     margin-bottom: 13px;
     border: 3px solid lightgray;
-    background: url("../img/technomart-bg-alt.jpg") 0 0 no-repeat; 
     box-sizing: border-box;
     transition-duration: 0.2s;
     overflow: hidden;
+}
+
+.portfolio__item-technomart:hover::after {
+    content: 'Fixed';
+    position: absolute;
+    top: 152px;
+    left: 7px;
+    width: 127px;
+    height: 41px;
+    background-color: teal;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 41px;
+    
+}
+
+.portfolio__item-sedona:hover::after {
+    content: 'Adaptive';
+    position: absolute;
+    top: 152px;
+    left: 7px;
+    width: 127px;
+    height: 41px;
+    background-color: teal;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 41px;
+}
+
+.portfolio__item-mogo:hover::after {
+    content: 'Fixed';
+    position: absolute;
+    top: 152px;
+    left: 7px;
+    width: 127px;
+    height: 41px;
+    background-color: teal;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 41px;
+}
+
+.portfolio__item-borodinskiy:hover::after {
+    content: 'Fixed';
+    position: absolute;
+    top: 152px;
+    left: 7px;
+    width: 127px;
+    height: 41px;
+    background-color: teal;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 41px;
+    
+}
+
+.portfolio__item-nerds:hover::after {
+    content: 'Fixed';
+    position: absolute;
+    top: 152px;
+    left: 7px;
+    width: 127px;
+    height: 41px;
+    background-color: teal;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 41px;
+    
 }
 
 .portfolio__item:hover {
@@ -453,8 +541,6 @@ img {
 .contacts__list li {
   margin-bottom: 20px;
 }
-
-
 
 /*
 .sprite {
