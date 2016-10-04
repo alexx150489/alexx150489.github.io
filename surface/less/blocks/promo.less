@@ -1,0 +1,337 @@
+.promo {
+	min-height: 568px;
+	background: url("../img/promo-line320.png") 76px 167px no-repeat, url("../img/background-320.jpg") 0 0 no-repeat;
+	padding-top: 1px;
+}
+	
+.promo__logo {
+	position: relative;
+	font-family: @font-bold;
+	font-size: 28px;
+	line-height: 28px;
+	color: @fc-alt;
+	text-transform: uppercase;
+	text-align: center;
+	padding-left: 31px;
+	margin: 39px 0 140px 0;
+	&::before {
+		position: absolute;
+		content: '';
+		width: 26px;
+		height: 25px;
+		background: url("../img/surface-logo.svg") 0 0 no-repeat;
+		background-size: 26px;
+		left: 80px;
+	}
+}
+
+.promo__description {
+	display: none;
+}
+
+.promo__title {
+	font-family: @font-bold;
+	font-size: 32px;
+	line-height: 32px;
+	color: @fc-alt;
+	text-transform: uppercase;
+}
+
+.promo__title.first {
+	margin: 0 0 29px 10px;
+}
+
+.promo__title.second {
+	margin: 0 0 94px 67px;
+}
+
+.promo__buttons {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 44px;
+}
+
+.promo__button {
+	&:hover {
+		background-color: @hover-surface;
+	}
+	display: block;
+	width: 142px;
+	height: 41px;
+	background-color: @bgc-surface;
+	border-radius: 26px;
+	padding-top: 1px;
+	margin: 0 5px;
+	transition-duration: 0.3s;
+}
+
+.promo__buttons-wrapper {
+	margin-top: 10px;
+}
+
+.promo__button-apple .promo__buttons-wrapper {
+	padding-left: 44px;
+	position: relative;
+}
+
+.promo__button-apple .promo__buttons-wrapper::before {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 17px;
+	top: 0;
+	left: 13px;
+	background: url(../img/sprite.png) -49px -5px no-repeat;
+}
+
+.promo__button-google .promo__buttons-wrapper {
+	position: relative;
+	padding-left: 53px;
+}
+
+.promo__button-google .promo__buttons-wrapper::before {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 21px;
+	border-style: solid;
+	border-width: 9px 0 9px 11px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.promo__button-text {
+	font-family: @font-light;
+	font-size: 8px;
+	line-height: 8px;
+	color: @fc-alt;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+
+.promo__button-text.semibold {
+	font-family: @font-semibold;
+}
+
+.promo__menu-list {
+	.unstyledlist();
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-family: @font-light;
+	font-size: 12px;
+	line-height: 12px;
+	text-transform: uppercase;
+}
+
+.promo__menu-item {
+	margin: 0 32px 10px 0;
+}
+
+.promo__menu-item.baseball {
+	margin-right: 0;
+}
+
+.promo__menu-item.soccer {
+	margin-left: 28px;
+}
+
+.promo__menu-link {
+	&:hover {
+		color: @fc-alt;
+	}
+	color: @fc-surface;
+	transition-duration: 0.3s;
+}
+
+@media @tablet-width { 
+	.promo {
+		min-height: 959px;
+		background: url("../img/promo-line768.png") 254px 242px no-repeat, url("../img/background-768.jpg") 0 0 no-repeat;
+		padding-top: 1px;
+	}
+	
+	.promo__wrapper-logo {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 200px;
+	}
+	
+	.promo__logo {
+		font-size: 35px;
+		background-size: 32px;
+		padding: 0;
+		margin: 56px 0 0 60px;
+		&::before {
+			width: 32px;
+			height: 32px;
+			left: -35px;
+			top: -2px;
+			background-size: 32px;
+		}
+	}
+	
+	.promo__description {
+		display: block;
+		font-family: @font-light;
+		font-size: 14px;
+		line-height: 14px;
+		color: @fc-alt;
+		text-transform: uppercase;
+		margin: 56px 20px 0 0;
+	}
+	
+	.promo__title {
+		font-family: @font-bold;
+		font-size: 64px;
+		line-height: 64px;
+		color: @fc-alt;
+		text-transform: uppercase;
+	}
+	
+	.promo__title.first {
+		margin: 0 0 35px 90px;
+	}
+
+	.promo__title.second {
+		margin: 0 0 94px 200px;
+	}
+	
+	.promo__wrapper-order {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.promo__main-menu {
+		order: -1;
+		margin-bottom: 117px;
+	}
+	
+	.promo__menu-list {
+		justify-content: space-around;
+		font-size: 16px;
+	}
+	
+	.promo__menu-item {
+		margin: 0;
+	}
+	
+	.promo__menu-item.soccer {
+		margin: 0;
+	}
+	
+	.promo__button {
+		display: block;
+		width: 311px;
+		height: 77px;
+		background-color: @bgc-surface;
+		border-radius: 38px;
+		padding-top: 1px;
+		margin: 0 15px;
+	}
+	
+	.promo__button-text {
+		font-size: 14px;
+		line-height: 14px;
+		padding-bottom: 5px;
+	}
+	
+	.promo__button-apple .promo__buttons-wrapper {
+		padding-left: 98px;
+		margin-top: 21px;
+	}
+	
+	.promo__button-apple .promo__buttons-wrapper::before {
+		width: 33px;
+		height: 39px;
+		top: -5px;
+		left: 30px;
+		background: url(../img/sprite.png) -74px -5px no-repeat;
+	}
+	
+	.promo__button-google .promo__buttons-wrapper {
+		padding-left: 98px;
+		margin-top: 21px;
+	}
+	
+	.promo__button-google .promo__buttons-wrapper::before {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 20px 0 20px 20px;
+		border-color: transparent transparent transparent #fff;
+		top: -3px;
+		left: 43px;
+	}
+}
+
+@media @desktop-width {
+	.promo {
+		min-height: 960px;
+		background: url("../img/promo-line768.png") 1934px 242px no-repeat, url("../img/background-1920.jpg") 0 0 no-repeat;
+	}
+	
+	.promo__logo {
+		font-size: 35px;
+		background-size: 32px;
+		padding: 0;
+		margin: 56px 0 0 226px;
+	}
+	
+	.promo__description {
+		margin: 56px 270px 0 0;
+	}
+	
+	.promo__wrapper-title {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 253px;
+			height: 316px;
+			top: -40px;
+			left: 581px;
+			background: url(../img/promo-line768.png) 0 0 no-repeat;
+		}
+	}
+		
+	.promo__title {
+		font-size: 90px;
+		line-height: 90px;
+	}
+
+	.promo__title.first {
+		margin: 0 0 35px 192px;
+		position: relative;
+		z-index: 3;
+	}
+
+	.promo__title.second {
+		margin: 0 0 30px 650px;
+	}
+	
+	.promo__main-menu {
+		margin: 0 279px 210px 0;
+		margin-right: 279px;	
+	}
+	
+	.promo__menu-list {
+		justify-content: flex-end;
+		font-size: 14px;
+	}
+	
+	.promo__menu-item {
+		margin-right: 55px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	.promo__menu-item.soccer, .promo__menu-item.baseball {
+		margin-right: 55px;
+	} 
+}
+
+
+
