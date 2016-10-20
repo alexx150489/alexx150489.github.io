@@ -1,0 +1,197 @@
+.main-content
+	container()
+	clearfix()
+	
+.main-content__main-title
+	font-family $font
+	text-align center
+	color $main-color
+	margin 0
+	margin-bottom 50px
+		
+.main-content__main-title span
+	color $alt-color
+	
+.main-content__filter
+	margin-bottom 36px
+	
+.main-content__filter-list
+	unstyledlist()
+	font-size 0
+	text-align center
+	
+.main-content__filter-item
+	display inline-block
+	vertical-align top
+	font-size 14px
+	line-height 14px
+	color $main-color
+	text-transform uppercase
+	margin-right 5px
+
+.main-content__filter-link
+	color $main-color
+	transition-duration 0.3s
+	&:hover
+		color $alt-color
+	
+.main-content__filter-link.active 
+	color $alt-color
+	
+.main-content__gallery-wrapper
+	max-width 480px
+	margin 0 auto
+	clearfix()
+
+.main-content__gallery-item
+	position relative
+	float left
+	width 218px
+	margin-right 28px
+	margin-bottom 47px
+	
+	&:nth-child(2n)
+		margin-right 0
+	&::after
+		content ''
+		position absolute
+		width 37px
+		height 37px
+		top: 181px;
+		left: 151px;
+		background-color $alt-color
+		border 10px solid rgba(92, 91, 91, 0.3)
+		border-radius 50%
+		background $alt-color url(../img/magnifier.png) center no-repeat
+		background-clip: padding-box;
+		cursor pointer
+
+.main-content__gallery-title
+	font-family $font
+	font-size 16px
+	line-height 16px
+	color $title-color
+	margin-bottom 6px
+
+.main-content__gallery-type
+	font-family $font
+	font-size 12px
+	line-height 12px
+	color $main-color
+	margin-bottom 13px
+
+.main-content__gallery-image
+	width 218px
+	height 173px
+	background-color lightblue
+	box-shadow 0px 0px 26px -3px rgba(110,107,110,1)
+
+.main-content__paginator
+	margin-top: 40px;
+	margin-bottom 78px
+	text-align center
+	
+.main-content__paginator-list
+	unstyledlist()
+	font-size 0
+	
+.main-content__paginator-item
+	display inline-block
+	vertical-align top
+	border 1px solid $title-color
+	border-radius 2px
+	margin-right 4px
+	&:last-child
+		margin-right 0
+	
+.main-content__paginator-link
+	display block
+	width 20px
+	height 20px
+	font-family $font
+	font-size 12px
+	line-height 20px
+	color $main-color
+	text-align center
+	transition-duration 0.3s
+	&:hover
+		color $alt-color
+
+.main-content__paginator-link.to-start
+	height 15px
+	background linear-gradient(to bottom, #f6f8f9 0%,#e5ebee 42%,#d7dee3 63%,#f5f7f9 100%)
+	&::after
+		content ''
+		display block
+		width: 14px;
+		height: 11px;
+		background url('../img/sprite.png') -76px -5px no-repeat
+		margin 0 auto
+		margin-top 5px
+
+.main-content__paginator-link.prev
+	height 15px
+	background linear-gradient(to bottom, #f6f8f9 0%,#e5ebee 42%,#d7dee3 63%,#f5f7f9 100%)
+	&::after
+		content ''
+		display block
+		width: 8px;
+		height: 11px;
+		background url('../img/sprite.png') -5px -5px no-repeat
+		margin 0 auto
+		margin-top 5px
+
+.main-content__paginator-link.to-end
+	height 15px
+	background linear-gradient(to bottom, #f6f8f9 0%,#e5ebee 42%,#d7dee3 63%,#f5f7f9 100%)
+	&::after
+		content ''
+		display block
+		width: 14px;
+		height: 11px;
+		background url('../img/sprite.png') -100px -5px no-repeat
+		margin 0 auto
+		margin-top 5px		
+
+.main-content__paginator-link.next
+	height 15px
+	background linear-gradient(to bottom, #f6f8f9 0%,#e5ebee 42%,#d7dee3 63%,#f5f7f9 100%)
+	&::after
+		content ''
+		display block
+		width: 8px;
+		height: 11px;
+		background url('../img/sprite.png') -23px -5px no-repeat
+		margin 0 auto
+		margin-top 5px	
+
+.main-content__paginator-link.active
+	color $alt-color
+	
+@media $middle-width
+	.main-content__gallery-wrapper
+		max-width 726px
+		
+	.main-content__gallery-item
+		&:nth-child(2n)
+			margin-right 28px
+		&:nth-child(3n)
+			margin-right 0
+		
+	.main-content__gallery-image
+		background-color lightgreen
+
+
+@media $max-width
+	.main-content__gallery-wrapper
+		max-width 960px
+		
+	.main-content__gallery-item
+			&:nth-child(3n)
+				margin-right 28px
+			&:nth-child(4n)
+				margin-right 0
+	
+	.main-content__gallery-image
+		background-color SandyBrown
+		
