@@ -73,6 +73,7 @@ button:focus {
   min-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 @media (min-width : 768px) {
@@ -138,7 +139,7 @@ button:focus {
   }
 }
 
-/* CREATOR */
+/*  ===CREATOR===  */
 
 .main-header__creator-wrapper {
   display: flex;
@@ -299,7 +300,9 @@ button:focus {
   fill: rgb(255, 137, 64);
 }
 
-/* NAVIGATION */
+
+
+/* ===NAVIGATION=== */
 
 .main-header__navigation {
   display: none;
@@ -412,6 +415,8 @@ button:focus {
     display: none;
   }
 }
+
+
 
 /*  ===CONTENT===  */
 
@@ -620,7 +625,8 @@ button:focus {
 }
 
 
-/* Навыки */
+
+/* ===SKILLS=== */
 
 .skills__title {
   font-family: 'Roboto', sans-serif;
@@ -724,6 +730,8 @@ button:focus {
   background: url(../img/sprite.png) -5px -5px no-repeat;
 }
 
+
+
 /* Сертификаты */
 .main-content__certificates {
   padding-bottom: 1px;
@@ -765,6 +773,8 @@ button:focus {
 .certificates__htmladvanced:hover {
   border-color: rgb(69, 76, 142);
 }
+
+
 
 /* Контакты */
 .main-footer {
@@ -876,6 +886,7 @@ button:focus {
 .contacts__list li {
   margin-bottom: 20px;
 }
+
 
 
 /*ANIMATION*/
