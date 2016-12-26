@@ -417,7 +417,10 @@ button:focus {
 
 .slick-item-wrapper {
   padding-right: 10px;
+  box-sizing: border-box;
 }
+
+
 
 .main-content {
   background-color: white;
@@ -447,6 +450,12 @@ button:focus {
   margin-bottom: 30px;
 }
 
+/*
+.potfolio-slider {
+  margin-right: -10px;
+}
+*/
+
 .portfolio__portfolio-items {
   display: flex;
   flex-direction: row;
@@ -465,6 +474,7 @@ button:focus {
   border: 3px solid lightgray;
   box-sizing: border-box;
   transition-duration: 0.2s;
+  box-shadow:  0px 9px 15px -8px rgba(36, 36, 36, 0.75);
   overflow: hidden;
 }
 
@@ -870,32 +880,29 @@ button:focus {
 
 /*ANIMATION*/
 
-/*
-.section-title::before {
-  animation: spin_5449 10s linear infinite;
+.gear1 {
+  animation: spin_gear1 10s linear infinite;
   animation-delay: 1s;
   transform-origin: 50% 50%;
 }
-*/
 
-.gear1 {
-  animation: spin_5449 10s linear infinite;
-  animation-delay: 1s;
-  transform-origin: 50% 50%;
+@keyframes spin_gear1 {
+  to { transform:rotate(0deg) }
+  from { transform:rotate(359deg) }
 }
 
 .gear2 {
-  animation: spin_5449 10s linear infinite;
+  animation: spin_gear2 10s linear infinite;
   animation-delay: 1s;
+  animation-direction: reverse;
   transform-origin: 50% 50%;
 }
 
-@keyframes spin_5449 {
-  0% { transform:rotate(0deg) }
-  20% { transform:rotate(150deg) }
-  50% { transform:rotate(100deg) }
-  100% { transform:rotate(359deg) }
+@keyframes spin_gear2 {
+  to { transform:rotate(0deg) }
+  from { transform:rotate(359deg) }
 }
+
 /*
 .sprite {
     background-image: url(spritesheet.png);
