@@ -461,11 +461,8 @@ button:focus {
 }
 */
 
-.portfolio__portfolio-items {
+.potfolio__slider {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
   position: relative;
 }
 
@@ -480,6 +477,7 @@ button:focus {
 }
 
 .portfolio__item img {
+  display: block;
   width: 100%;
   height: 200px;
 }
