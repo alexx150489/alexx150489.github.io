@@ -1,3 +1,6 @@
+$(document).ready(function(){
+
+
 var menu = $(".js-navigation");
 var menuTouchBtn = $(".js-burger");
 
@@ -25,6 +28,7 @@ $('#js-potfolio-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: true,
+  arrows: false,
   autoplay: true,
   autoplaySpeed: 4000,
   responsive: [
@@ -48,44 +52,48 @@ $('#js-potfolio-slider').slick({
     }
   ]
 });
+//
+//
+//$('#js-skills__items').slick({
+//  slidesToShow: 5,
+//  slidesToScroll: 1,
+//  arrows: false,
+//  autoplay: true,
+//  autoplaySpeed: 0,
+//  speed: 5000,
+//  cssEase:'linear',
+//  responsive: [
+//    {
+//      breakpoint: 1200,
+//      settings: {
+//        infinite: true,
+//        slidesToShow: 3,
+//        slidesToScroll: 3,
+//        dots: true,
+//        arrows: true,
+//        autoplay: true,
+//        autoplaySpeed: 4000,
+//        speed: 1000
+//      }
+//    },
+//    {
+//      breakpoint: 580,
+//      settings: {
+//        infinite: true,
+//        slidesToShow: 1,
+//        slidesToScroll: 1,
+//        dots: false,
+//        arrows: true,
+//        autoplay: true,
+//        autoplaySpeed: 4000,
+//        speed: 1000
+//      }
+//    }
+//  ]
+//});
 
 
-$('#js-skills__items').slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  arrows: false,
-  autoplay: true,
-  autoplaySpeed: 0,
-  speed: 5000,
-  cssEase:'linear',
-  responsive: [
-    {
-      breakpoint: 1200,
-			settings: {
-				infinite: true,
-				slidesToShow: 3,
-				slidesToScroll: 3,
-				dots: true,
-				arrows: true,
-				autoplay: true,
-				autoplaySpeed: 4000,
-				speed: 1000
-      }
-    },
-    {
-      breakpoint: 580,
-      settings: {
-				infinite: true,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				dots: false,
-				arrows: true,
-				autoplay: true,
-				autoplaySpeed: 4000,
-				speed: 1000
-      }
-    }
-  ]
+
+
 });
-
 

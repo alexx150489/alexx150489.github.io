@@ -1,19 +1,57 @@
 /*  ===CONTENT===  */
 
-.slick-item-wrapper {
-  padding-right: 10px;
-  box-sizing: border-box;
+
+// BREADCRUMBS >>> //
+
+.main-content__bread-crumbs {
+  .clearfix();
+  padding-top: 27px;
+  & ul {
+    list-style-type: none;
+  }
+  & li {
+    float: left;
+    margin-right: 15px;
+    font-family: "PT Sans Narrow";
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+  }
+  & a {
+    color: #000;
+    transition-duration: 0.2s;
+    &:hover {
+      color: rgb(255, 137, 64);
+    }
+  }
+  & .bread-crumbs-arrow {
+    padding-left: 22px;
+    color: #000;
+  }
 }
+
+@media (min-width : 480px) {
+  .main-content__bread-crumbs {
+    & li {
+      font-size: 18px;
+    }
+  }
+}
+
+// BREADCRUMBS <<< //
 
 .main-content {
   background-color: white;
   padding-top: 1px;
-	padding-bottom: 1px;
+  padding-bottom: 1px;
 }
 
 .main-content__portfolio {
   margin-bottom: 150px;
   margin-top: 70px;
+}
+.portfolio-page {
+  margin-top: 20px;
 }
 
 .portfolio--no-margin {
@@ -32,8 +70,28 @@ margin-right: -10px;
 */
 
 .potfolio__slider {
-  display: flex;
   position: relative;
+  .clearfix();
+}
+
+.slick-item-wrapper {
+  padding-right: 10px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  float: left;
+  width: 33.333%;
+}
+
+@media (max-width : 992px) {
+  .slick-item-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width : 480px) {
+  .slick-item-wrapper {
+    width: 100%;
+  }
 }
 
 .portfolio__item {
@@ -41,9 +99,7 @@ margin-right: -10px;
   display: block;
   border: 3px solid lightgray;
   box-sizing: border-box;
-  transition-duration: 0.2s;
   box-shadow:  0px 9px 15px -8px rgba(36, 36, 36, 0.75);
-
 }
 
 .portfolio__item img {
@@ -62,6 +118,7 @@ margin-right: -10px;
   background-color: teal;
   font-family: 'Roboto', sans-serif;
   color: white;
+  border: 2px solid #b7b4b4;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
@@ -76,14 +133,16 @@ margin-right: -10px;
   left: 7px;
   width: 127px;
   height: 41px;
-  background-color: teal;
+  background-color: #ff8940;
   font-family: 'Roboto', sans-serif;
   color: white;
+  border: 2px solid #b7b4b4;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 41px;
+  transition-duration: 0.2s;
 }
 
 .portfolio__item-mogo:hover::after {
@@ -96,14 +155,16 @@ margin-right: -10px;
   background-color: teal;
   font-family: 'Roboto', sans-serif;
   color: white;
+  border: 2px solid #b7b4b4;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 41px;
+  transition-duration: 0.2s;
 }
 
-.portfolio__item-borodinskiy:hover::after {
+.portfolio__item-barbershop-borodinskiy:hover::after {
   content: 'Fixed';
   position: absolute;
   top: 152px;
@@ -113,6 +174,7 @@ margin-right: -10px;
   background-color: teal;
   font-family: 'Roboto', sans-serif;
   color: white;
+  border: 2px solid #b7b4b4;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
@@ -144,15 +206,35 @@ margin-right: -10px;
   left: 7px;
   width: 127px;
   height: 41px;
-  background-color: teal;
+  background-color: #ff8940;
   font-family: 'Roboto', sans-serif;
   color: white;
+  border: 2px solid #b7b4b4;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 41px;
 }
+
+.portfolio__item-activebox:hover::after {
+  content: 'Adaptive';
+  position: absolute;
+  top: 152px;
+  left: 7px;
+  width: 127px;
+  height: 41px;
+  background-color: #ff8940;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  border: 2px solid #b7b4b4;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
 
 .portfolio__item:hover {
   border-color: rgb(255, 137, 64);
@@ -190,21 +272,28 @@ margin-right: -10px;
 
 
 
-/* ===SKILLS=== */
+
+// SKILLS >>>
+
+.skills__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__wrapper-item {
+
+  width: 50%;
+  margin-bottom: 30px;
+}
 
 .main-content__skills {
     margin-bottom: 100px;
-} 
+}
 
 .skills__title {
   color: black;
   margin-bottom: 50px;
-}
-
-
-.skills__items {
-  height: 150px;
-
 }
 
 .skills__item {
@@ -212,49 +301,20 @@ margin-right: -10px;
   box-sizing: border-box;
 }
 
-.skills__items img {
-  height: 150px;
+.skills__item img {
+  height: 100px;
 }
 
-/* Сертификаты */
-.main-content__certificates {
-  padding-bottom: 1px;
+@media (min-width: 480px) {
+  .skills__wrapper-item {
+    width: 33.333%;
+  }
 }
 
-.certificates__certificates-wrapper {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	margin-bottom: 30px;
+@media (min-width: 768px) {
+  .skills__wrapper-item {
+    width: 20%;
+  }
 }
 
-.certificates__title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 33px;
-  line-height: 33px;
-  font-weight: 700;
-  color: black;
-  text-align: left;
-  width: 280px;
-  padding-bottom: 9px;
-  margin-bottom: 30px;
-}
-
-.certificates__certificate {
-  margin: 0 auto;
-  width: 170px;
-  height: 241px;
-  background-color: red;
-  border: 3px solid lightgray;
-  transition-duration: 0.2s;
-}
-
-.certificates__htmlbasic:hover {
-  border-color: rgb(255, 137, 64);
-}
-
-.certificates__htmladvanced:hover {
-  border-color: rgb(69, 76, 142);
-}
-
+// SKILLS <<<
