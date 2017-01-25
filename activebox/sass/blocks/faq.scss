@@ -1,0 +1,27 @@
+.faq__main-title {
+  text-align: center;
+}
+
+.faq__items {
+  padding: 30px 0;
+}
+
+.faq__text-wrapper {
+  display: none;
+  padding: 5px 10px;
+}
+
+.faq__item-title {
+  transition: background-color .2s;
+  display: block;
+  padding: 15px 10px;
+  color: #4b4b4b;
+  text-decoration: none;
+  background-color: #c4c4c4;;
+  border-bottom: 1px solid lightgray;
+}
+
+.faq__item-title:hover {
+  background-color: $base-background-color;
+  color: #fff;
+}

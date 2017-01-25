@@ -1,0 +1,21 @@
+//1
+@import "mixins.scss";
+@import "variables.scss";
+
+@import "global/fonts.scss";
+@import "global/base.scss";
+@import "global/normalize.scss";
+
+//2
+@import "blocks/navbar.scss";
+@import "blocks/promo.scss";
+@import "blocks/features.scss";
+@import "blocks/works.scss";
+@import "blocks/team.scss";
+@import "blocks/download.scss";
+@import "blocks/footer.scss";
+@import "blocks/modals.scss";
+@import "blocks/faq.scss";
+//3
+
+
