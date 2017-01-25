@@ -1,28 +1,23 @@
 /*ANIMATION*/
 
-.gear1 {
-  animation: spin_gear1 10s linear infinite;
-  animation-delay: 1s;
+.main-header__creator::after {
+	 animation: spin_gear 10s linear infinite;
+	 animation-delay: 1s;
 	// transform-origin: 67px 25px;
-  transform-origin: 50% 50%;
+	 transform-origin: 50% 50%;
 }
 
-@keyframes spin_gear1 {
-  to { transform:rotate(0deg) }
-  from { transform:rotate(359deg) }
-}
-
-.gear2 {
-  animation: spin_gear2 10s linear infinite;
-  animation-delay: 1s;
-  animation-direction: reverse;
+.main-header__creator::before {
+	 animation: spin_gear 10s linear infinite;
+	 animation-delay: 1s;
+	 animation-direction: reverse;
 	// transform-origin: 33px 65px;
 	transform-origin: 50% 50%;
 }
 
-@keyframes spin_gear2 {
-  to { transform:rotate(0deg) }
-  from { transform:rotate(359deg) }
+@keyframes spin_gear {
+	 to { transform:rotate(0deg) }
+	 from { transform:rotate(359deg) }
 }
 
 /*

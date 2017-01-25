@@ -14,26 +14,18 @@
   text-align: center;
 }
 /*ANIMATION*/
-.gear1 {
-  animation: spin_gear1 10s linear infinite;
+.main-header__creator::after {
+  animation: spin_gear 10s linear infinite;
   animation-delay: 1s;
   transform-origin: 50% 50%;
 }
-@keyframes spin_gear1 {
-  to {
-    transform: rotate(0deg);
-  }
-  from {
-    transform: rotate(359deg);
-  }
-}
-.gear2 {
-  animation: spin_gear2 10s linear infinite;
+.main-header__creator::before {
+  animation: spin_gear 10s linear infinite;
   animation-delay: 1s;
   animation-direction: reverse;
   transform-origin: 50% 50%;
 }
-@keyframes spin_gear2 {
+@keyframes spin_gear {
   to {
     transform: rotate(0deg);
   }
@@ -84,7 +76,7 @@ height: 19px;
 background-position: -80px -40px;
 }
 */
-/*  ===MAIN-HEADER===  */
+/*	===MAIN-HEADER===	*/
 .main-header {
   display: flex;
   flex-direction: column;
@@ -96,28 +88,41 @@ background-position: -80px -40px;
   z-index: 999;
   background: teal url("../img/bg3.png") 0 0 repeat;
 }
-/*  ===CREATOR===  */
+/*	===CREATOR===	*/
 .main-header__creator-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
 }
-.main-header__logo {
-  position: absolute;
-  top: -32px;
-  left: -60px;
-}
-.main-header__logo svg {
-  width: 60px;
-  height: 60px;
-}
 .main-header__creator {
+  position: relative;
   display: flex;
   margin: 50px 0 20px 75px;
   flex-direction: column;
   justify-content: center;
-  position: relative;
+}
+.main-header__creator::before {
+  position: absolute;
+  content: '';
+  top: -12px;
+  left: -66px;
+  width: 53px;
+  height: 53px;
+  background: url('../img/big-gear-white.png') 0 0 no-repeat;
+  background-size: 53px 53px;
+  transition-duration: 0.2s;
+}
+.main-header__creator::after {
+  position: absolute;
+  content: '';
+  top: -38px;
+  left: -32px;
+  width: 41px;
+  height: 41px;
+  background: url('../img/small-gear-white.png') 0 0 no-repeat;
+  background-size: 41px 41px;
+  transition-duration: 0.2s;
 }
 .main-header__name {
   font-family: 'Scada', sans-serif;
@@ -220,7 +225,7 @@ background-position: -80px -40px;
   background: url("../img/burger.png") 0 0 no-repeat;
   background-size: 30px 30px;
 }
-/*  ===CONTENT===  */
+/*	===CONTENT===	*/
 .main-content__bread-crumbs {
   padding-top: 27px;
 }
@@ -251,7 +256,24 @@ background-position: -80px -40px;
   padding-left: 22px;
   color: #000;
 }
+.portfolio__filters {
+  width: 387px;
+  margin: 15px auto;
+}
+.portfolio__filters span {
+  display: inline-block;
+  cursor: pointer;
+  padding: 2px 4px;
+  margin: 10px 10px;
+  font-family: "PT Sans Narrow";
+  text-transform: uppercase;
+}
+.active-filter {
+  color: #ff8940;
+}
 .main-content {
+  min-height: 822px;
+  box-sizing: border-box;
   background-color: white;
   padding-top: 1px;
   padding-bottom: 1px;
@@ -747,10 +769,6 @@ button:focus {
     -ms-grid-row-align: center;
     align-items: center;
   }
-  .main-header__logo {
-    top: -40px;
-    left: -72px;
-  }
   .main-header__name {
     font-size: 26px;
   }
@@ -794,10 +812,6 @@ button:focus {
   .main-header {
     position: static;
     border-bottom: 5px solid #086363;
-  }
-  .main-header__logo svg {
-    width: 80px;
-    height: 80px;
   }
   .main-header__name {
     font-family: 'Scada', sans-serif;
@@ -866,11 +880,46 @@ button:focus {
   }
 }
 @media (max-width: 992px) {
+  .main-header__creator::before {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+  }
+  .main-header__creator::after {
+    top: -36px;
+    left: -34px;
+    width: 38px;
+    height: 38px;
+    background-size: 38px 38px;
+  }
   .slick-item-wrapper {
     width: 50%;
   }
 }
 @media (max-width: 480px) {
+  .main-header__creator::before {
+    top: -12px;
+    left: -57px;
+    width: 45px;
+    height: 45px;
+    background-size: 45px 45px;
+  }
+  .main-header__creator::after {
+    top: -33px;
+    left: -28px;
+    width: 33px;
+    height: 33px;
+    background-size: 33px 33px;
+  }
+  .portfolio__filters {
+    width: 286px;
+  }
+  .portfolio__filters .filters-title {
+    display: none;
+  }
+  .portfolio__filters span {
+    margin: 10px 7px;
+  }
   .slick-item-wrapper {
     width: 100%;
   }
