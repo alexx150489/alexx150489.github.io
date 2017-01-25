@@ -792,7 +792,7 @@ button:focus {
     max-width: 750px;
   }
   .skills__wrapper-item {
-    width: 20%;
+    width: 21%;
   }
   .contacts__list-item {
     float: left;
@@ -869,6 +869,9 @@ button:focus {
   }
   .main-header__burger {
     display: none;
+  }
+  .skills__wrapper-item {
+    width: 16%;
   }
   body {
     padding-top: 0;
