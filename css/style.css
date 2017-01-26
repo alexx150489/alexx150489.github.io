@@ -289,11 +289,9 @@ background-position: -80px -40px;
   color: black;
   margin-bottom: 50px;
 }
-.potfolio-slider {
-  margin-right: -10px;
-}
 .potfolio__slider {
   position: relative;
+  margin-right: -10px;
 }
 .potfolio__slider:after {
   content: "";
