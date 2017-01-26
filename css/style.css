@@ -109,8 +109,7 @@ background-position: -80px -40px;
   left: -66px;
   width: 53px;
   height: 53px;
-  background: url('../img/big-gear-white.png') 0 0 no-repeat;
-  background-size: 53px 53px;
+  background: url('../img/big-gear-white-new.png') 0 0 no-repeat;
   transition-duration: 0.2s;
 }
 .main-header__creator::after {
@@ -120,8 +119,7 @@ background-position: -80px -40px;
   left: -32px;
   width: 41px;
   height: 41px;
-  background: url('../img/small-gear-white.png') 0 0 no-repeat;
-  background-size: 41px 41px;
+  background: url('../img/small-gear-white-new.png') 0 0 no-repeat;
   transition-duration: 0.2s;
 }
 .main-header__name {
@@ -229,17 +227,16 @@ background-position: -80px -40px;
 .main-content__bread-crumbs {
   padding-top: 27px;
 }
-.main-content__bread-crumbs:after {
+.main-content__bread-crumbs ul {
+  list-style-type: none;
+}
+.main-content__bread-crumbs ul:after {
   content: "";
   display: table;
   clear: both;
 }
-.main-content__bread-crumbs ul {
-  list-style-type: none;
-}
 .main-content__bread-crumbs li {
   float: left;
-  margin-right: 15px;
   font-family: "PT Sans Narrow";
   font-size: 16px;
   text-transform: uppercase;
@@ -253,11 +250,11 @@ background-position: -80px -40px;
   color: #ff8940;
 }
 .main-content__bread-crumbs .bread-crumbs-arrow {
-  padding-left: 22px;
+  padding: 0 15px;
   color: #000;
 }
 .portfolio__filters {
-  width: 387px;
+  width: 407px;
   margin: 15px auto;
 }
 .portfolio__filters span {
@@ -292,11 +289,9 @@ background-position: -80px -40px;
   color: black;
   margin-bottom: 50px;
 }
-/*
 .potfolio-slider {
-margin-right: -10px;
+  margin-right: -10px;
 }
-*/
 .potfolio__slider {
   position: relative;
 }
@@ -781,7 +776,7 @@ button:focus {
     left: 0;
   }
   .main-content__bread-crumbs li {
-    font-size: 18px;
+    font-size: 17px;
   }
   .skills__wrapper-item {
     width: 33.333%;
@@ -915,7 +910,7 @@ button:focus {
     background-size: 33px 33px;
   }
   .portfolio__filters {
-    width: 286px;
+    width: 306px;
   }
   .portfolio__filters .filters-title {
     display: none;

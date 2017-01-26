@@ -4,14 +4,13 @@
 // PORTFOLIO-BREADCRUMBS >>> //
 
 .main-content__bread-crumbs {
-	.clearfix();
 	padding-top: 27px;
 	& ul {
+		.clearfix();
 		list-style-type: none;
 	}
 	& li {
 		float: left;
-		margin-right: 15px;
 		font-family: "PT Sans Narrow";
 		font-size: 16px;
 		text-transform: uppercase;
@@ -21,11 +20,11 @@
 		color: #000;
 		transition-duration: 0.2s;
 		&:hover {
-			color: rgb(255, 137, 64);
+				color: rgb(255, 137, 64);
 		}
 	}
 	& .bread-crumbs-arrow {
-		padding-left: 22px;
+		padding: 0 15px;
 		color: #000;
 	}
 }
@@ -33,7 +32,7 @@
 @media (min-width : 480px) {
 	.main-content__bread-crumbs {
 		& li {
-			font-size: 18px;
+			font-size: 17px;
 		}
 	}
 }
@@ -43,7 +42,7 @@
 // PORTFOLIO-FILTERS >>>
 
 .portfolio__filters {
-	width: 387px;
+	width: 407px;
 	margin: 15px auto;
 }
 
@@ -62,7 +61,7 @@
 
 @media (max-width: 480px) {
 	.portfolio__filters {
-		width: 286px;
+		width: 306px;
 	}
 
 	.portfolio__filters .filters-title {
@@ -104,11 +103,11 @@
 	margin-bottom: 50px;
 }
 
-/*
+
 .potfolio-slider {
-margin-right: -10px;
+	margin-right: -10px;
 }
-*/
+
 
 .potfolio__slider {
 	position: relative;
