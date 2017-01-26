@@ -257,6 +257,9 @@ background-position: -80px -40px;
   width: 407px;
   margin: 15px auto;
 }
+.portfolio__filters .filters-title {
+  cursor: default;
+}
 .portfolio__filters span {
   display: inline-block;
   cursor: pointer;
