@@ -191,8 +191,8 @@ background-position: -80px -40px;
   font-size: 22px;
   text-align: center;
   color: #fff;
-  background-color: teal;
-  border-bottom: 1px solid #121212;
+  background: teal url("../img/bg3.png") 0 0 repeat;
+  border-bottom: 1px solid #c3c3c3;
   transition-duration: .1s;
 }
 .main-header__navigation-link:hover {
@@ -854,6 +854,7 @@ button:focus {
     display: block;
     font-family: 'Scada', sans-serif;
     font-size: 22px;
+    background-color: transparent;
     color: #fff;
     padding-bottom: 1px;
     border-bottom: 3px solid #ff8940;
